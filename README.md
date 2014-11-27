@@ -80,7 +80,8 @@ function(err,result){
 
  ### Get Goal Data:
 
-provider.misfitApi.getGoals({
+```javascript
+misfitApi.getGoals({
 	token:'the_token_you_got_in_the_exchange_step',
 	start_date:'2014-10-01',
 	end_date:'2014-10-27',
@@ -98,4 +99,4 @@ provider.misfitApi.getGoals({
 	*/
 
 });
-
+```
