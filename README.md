@@ -57,24 +57,24 @@ misfitApi.exchange(req.query.code, function(err,token){//req.query.code: the cod
 ### Get Summary Data:
 ```javascript
 misfitApi.getSummary({
-  token:'the_token_you_got_in_the_exchange_step',
-  start_date:'2014-10-01',
-  end_date:'2014-10-27',
-  detail:true
+	token:'the access_token you got in the exchange step',
+	start_date:'2014-10-01',
+	end_date:'2014-10-27',
+	detail:true
 },
 function(err,result){
-  if (err || !result) {
-    return callback(err);
-  }
-  //iterate result.summary array here
-  /* example:
-  date: "2014-08-18"
-  points: 278
-  steps: 1940
-  calories: 2147.7344
-  activityCalories: 521.2341
-  distance: 0.9178
-  */
+	if (err || !result) {
+		return callback(err);
+	}
+	//iterate result.summary array here
+	/* example:
+	date: "2014-08-18"
+	points: 278
+	steps: 1940
+	calories: 2147.7344
+	activityCalories: 521.2341
+	distance: 0.9178
+	*/
 });
  ```
 
@@ -82,21 +82,21 @@ function(err,result){
 
 ```javascript
 misfitApi.getGoals({
-	token:'the_token_you_got_in_the_exchange_step',
-	start_date:'2014-10-01',
-	end_date:'2014-10-27',
+		token:'the access_token you got in the exchange step',
+		start_date:'2014-10-01',
+		end_date:'2014-10-27',
 	},
 	function(err,result){
-	if (err || !result) {
-	return callback(err);
+		if (err || !result) {
+			return callback(err);
+		}
+		//iterate result.goals array here
+		/*
+		id: "c6a530001cb"
+		date: "2014-10-11"
+		points: 618
+		targetPoints: 1000
+		*/
 	}
-	//iterate result.goals array here
-	/*
-	id: "c6a530001cb"
-	date: "2014-10-11"
-	points: 618
-	targetPoints: 1000
-	*/
-
-});
+);
 ```
