@@ -1,7 +1,7 @@
 {
-  "name": "misfit-cloud-api-sample",
+  "name": "misfit-cloud-api",
   "version": "0.0.1",
-  "description": "Nodejs Sample for Misfit Cloud API",
+  "description": "Nodejs wrapper for Misfit Cloud API",
   "main": "index.js",
   "scripts": {
     "test": "node test/index.js"
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/Chandler-Sun/misfit-cloud-api-sample",
   "dependencies": {
+    "lodash": "^2.4.1",
     "request": "^2.48.0"
   }
 }
