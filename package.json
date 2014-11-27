@@ -1,6 +1,6 @@
 {
   "name": "misfit-cloud-api",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "Nodejs wrapper for Misfit Cloud API",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Chandler-Sun/misfit-cloud-api-sample"
+    "url": "https://github.com/Chandler-Sun/misfit-cloud-api-wrapper"
   },
   "keywords": [
     "Misfit",
@@ -20,9 +20,9 @@
   "author": "tlwanan@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Chandler-Sun/misfit-cloud-api-sample/issues"
+    "url": "https://github.com/Chandler-Sun/misfit-cloud-api-wrapper/issues"
   },
-  "homepage": "https://github.com/Chandler-Sun/misfit-cloud-api-sample",
+  "homepage": "https://github.com/Chandler-Sun/misfit-cloud-api-wrapper",
   "dependencies": {
     "lodash": "^2.4.1",
     "request": "^2.48.0"

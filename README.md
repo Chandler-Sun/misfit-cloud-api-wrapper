@@ -1,7 +1,7 @@
-misfit-cloud-api-sample
+misfit-cloud-api-wrapper
 =======================
 
-Nodejs sample for Misfit Cloud API
+Nodejs wrapper for [Misfit Cloud API](https://build.misfit.com)
 
 ## Install:
 
@@ -47,9 +47,55 @@ misfitApi.exchange(req.query.code, function(err,token){//req.query.code: the cod
     if(profile&&profile.userId){
       //do what ever you want with the profile, like login.
     }else{
-      return res.forbidden();
+      //exception?
     }
   })
 });
 
 ```
+
+### Get Summary Data:
+```javascript
+misfitApi.getSummary({
+  token:'the_token_you_got_in_the_exchange_step',
+  start_date:'2014-10-01',
+  end_date:'2014-10-27',
+  detail:true
+},
+function(err,result){
+  if (err || !result) {
+    return callback(err);
+  }
+  //iterate result.summary array here
+  /* example:
+  date: "2014-08-18"
+  points: 278
+  steps: 1940
+  calories: 2147.7344
+  activityCalories: 521.2341
+  distance: 0.9178
+  */
+});
+ ```
+
+ ### Get Goal Data:
+
+provider.misfitApi.getGoals({
+	token:'the_token_you_got_in_the_exchange_step',
+	start_date:'2014-10-01',
+	end_date:'2014-10-27',
+	},
+	function(err,result){
+	if (err || !result) {
+	return callback(err);
+	}
+	//iterate result.goals array here
+	/*
+	id: "c6a530001cb"
+	date: "2014-10-11"
+	points: 618
+	targetPoints: 1000
+	*/
+
+});
+
