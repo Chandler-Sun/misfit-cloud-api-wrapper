@@ -14,7 +14,7 @@ var mySettings = {
 };
 var misfitApi = new MisfitAPI(mySettings);
 misfitApi.authorize(function(err,redirectURL){
-  return res.redirect(redirectURL);//res: the response object in connect or sails.
+  //redirect to redirectURL here
 });
 
 ```
