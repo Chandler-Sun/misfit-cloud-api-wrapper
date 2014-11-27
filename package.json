@@ -1,0 +1,29 @@
+{
+  "name": "misfit-cloud-api-sample",
+  "version": "0.0.1",
+  "description": "Nodejs Sample for Misfit Cloud API",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chandler-Sun/misfit-cloud-api-sample"
+  },
+  "keywords": [
+    "Misfit",
+    "API",
+    "Cloud",
+    "API",
+    "Shine"
+  ],
+  "author": "tlwanan@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Chandler-Sun/misfit-cloud-api-sample/issues"
+  },
+  "homepage": "https://github.com/Chandler-Sun/misfit-cloud-api-sample",
+  "dependencies": {
+    "request": "^2.48.0"
+  }
+}
