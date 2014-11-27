@@ -3,19 +3,22 @@ misfit-cloud-api-wrapper
 
 Nodejs wrapper for [Misfit Cloud API](https://build.misfit.com)
 
-## Install:
+## Installation
+
+Install from NPM.
 
 ```bash
 npm install misfit-cloud-api --save
 ```
 
-## Usage:
+## Usage
 
 ```javascript
 var MisfitAPI = require('misfit-cloud-api'); 
 ```
 
-### Redirect to authorization URL:
+### Redirect to authorization URL
+
 ```javascript
 var mySettings = {
 	clientKey:'your clientKey',//clientKey in our developer portal
@@ -29,9 +32,9 @@ misfitApi.authorize(function(err,redirectURL){
 
 ```
 
-### Exchange access token and get profile:
-```javascript
+### Exchange access token and get profile
 
+```javascript
 var mySettings = {
 	clientKey:'your clientKey',//clientKey in our developer portal
 	clientSecret:'your clientSecret',//clientSecret in our developer portal
@@ -51,10 +54,10 @@ misfitApi.exchange(req.query.code, function(err,token){//req.query.code: the cod
     }
   })
 });
-
 ```
 
-### Get Summary Data:
+### Get Summary Data
+
 ```javascript
 misfitApi.getSummary({
 	token:'the access_token you got in the exchange step',
@@ -78,7 +81,7 @@ function(err,result){
 });
  ```
 
- ### Get Goal Data:
+### Get Goal Data
 
 ```javascript
 misfitApi.getGoals({
