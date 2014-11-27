@@ -3,9 +3,19 @@ misfit-cloud-api-sample
 
 Nodejs sample for Misfit Cloud API
 
-Usage:
+## Install:
 
-# Redirect to authorization URL:
+```bash
+npm install misfit-cloud-api --save
+```
+
+## Usage:
+
+```javascript
+var MisfitAPI = require('misfit-cloud-api'); 
+```
+
+### Redirect to authorization URL:
 ```javascript
 var mySettings = {
 	clientKey:'your clientKey',//clientKey in our developer portal
@@ -19,7 +29,7 @@ misfitApi.authorize(function(err,redirectURL){
 
 ```
 
-# Exchange access token and get profile:
+### Exchange access token and get profile:
 ```javascript
 
 var mySettings = {
